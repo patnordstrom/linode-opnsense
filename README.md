@@ -58,6 +58,7 @@ The high level process to deploy is as follows (before proceeding, review the de
 3. Export your API token as `export token="ABC123XYZ"`
 4. Execute `opnsense_ha_deploy.sh`
 5. If any errors occur there will be generated log files as well as detailed output in the console.  The script will take several minutes to run and will indicate completion when done.  If successful you will see two instances in Cloud Manager with the label in their name that you set in your config.
+    1. NOTE: you will see messages such as "Linode busy or rate limited" as well as "API error" in some cases.  There are built-in retry mechanisms for certain conditions that are known to occur during deployment so this is normal.
 6. Once they are in your account deployed, they take about 10-15 minutes to finish initial setup.  There’s a cloud-init script that runs to bootstrap them.
 
 ## Step 5 — Login and Change the Root Password
