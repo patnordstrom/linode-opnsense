@@ -22,7 +22,11 @@ The high level process to deploy is as follows (before proceeding, review the de
     2. [https://test-ord.us-ord-1.linodeobjects.com/files/priv/opnsense_standby.qcow2](https://test-ord.us-ord-1.linodeobjects.com/files/priv/opnsense_standby.qcow2)
 2. Decide on the region that you will be deploying OPNSense in and create a bucket and location in Object Storage on your account to host the images.
     1. The bucket and folder should be private (the script does a check on the access key and secret to ensure the permissions are read-only to this specific bucket).
-    2. Upload the images you downloaded in step 1 to this new bucket and folder you have created on your account.
+    2. Upload the images you downloaded in step 1 to this new bucket and folder you have created on your account.  The example
+    of what my bucket looks like after uploading them is shown below.
+
+    ![obj-bucket.jpg](docs/obj-bucket.jpg)
+
 3. Create an Access Key that has read-only permissions to the bucket where your images are located.  In my example, I have a bucket called `test-ord` where my images are stored in Chicago and the key that I create is specifically permissioned to that bucket with read-only permissions.
     
     ![obj-permissions.jpg](docs/obj-permissions.jpg)
