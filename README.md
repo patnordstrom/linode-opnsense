@@ -18,8 +18,8 @@ The high level process to deploy is as follows (before proceeding, review the de
 ## Step 1 — Setup Images in Object Storage
 
 1. Download these images to your local computer
-    1. [https://test-ord.us-ord-1.linodeobjects.com/files/priv/opnsense_active.qcow2](https://test-ord.us-ord-1.linodeobjects.com/files/priv/opnsense_active.qcow2)
-    2. [https://test-ord.us-ord-1.linodeobjects.com/files/priv/opnsense_standby.qcow2](https://test-ord.us-ord-1.linodeobjects.com/files/priv/opnsense_standby.qcow2)
+    1. [Active Image](https://test-ord.us-ord-1.linodeobjects.com/files/pub/opnsense/ha/1791299735/opnsense-active.qcow2)
+    2. [Standby Image](https://test-ord.us-ord-1.linodeobjects.com/files/pub/opnsense/ha/1791299735/opnsense-stdby.qcow2)
 2. Decide on the region that you will be deploying OPNSense in and create a bucket and location in Object Storage on your account to host the images.
     1. The bucket and folder should be private (the script does a check on the access key and secret to ensure the permissions are read-only to this specific bucket).
     2. Upload the images you downloaded in step 1 to this new bucket and folder you have created on your account.  The example
