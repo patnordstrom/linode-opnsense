@@ -63,7 +63,7 @@ The high level process to deploy is as follows (before proceeding, review the de
 
 ## Step 5 — Login and Change the Root Password
 
-1. You can login to the instances at https://<floating_ip>:8077
+1. You can login to the instances at https://<floating_ip>:8087
     1. NOTE:  you will get a certificate error in the browser that you will need to allow / override to login.
     2. The floating_ip will be the public IPv4 of your primary instance.
     3. The default password is `L1n0d3` so be sure to change this
